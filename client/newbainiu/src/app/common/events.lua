@@ -1,0 +1,8 @@
+
+--通知自动算牌打开
+EVENT_NOTICE_OPENSTATE = 101
+
+--通知已选择的牌
+EVENT_NOTICE_SELECT_POKER = 102
+
+

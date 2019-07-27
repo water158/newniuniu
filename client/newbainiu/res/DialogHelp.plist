@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>DialogHelp/jinniu.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/meiniu.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{220,0},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/niu1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{440,0},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/niu2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,101},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/niu3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{220,101},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/niu4.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{440,101},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/niu5.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,202},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/niu6.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,303},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/niu7.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,404},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/niu8.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{220,202},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/niu9.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{440,202},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/niuniu.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{220,303},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/yinniu.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{220,404},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+			<key>DialogHelp/zhadan.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{440,303},{220,101}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,101}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>DialogHelp.png</string>
+			<key>realTextureFileName</key>
+			<string>DialogHelp.png</string>
+			<key>size</key>
+			<string>{660,505}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>660</integer>
+			<key>height</key>
+			<integer>505</integer>
+		</dict>
+	</dict>
+</plist>

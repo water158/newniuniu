@@ -1,0 +1,248 @@
+11/21/15 17:20:03   [INFO] GameState.load() - get values from "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:03   dump from: [string "src/framework/ql/utils/LocalStorage.lua"]:21: in function 'load'
+11/21/15 17:20:03   - "#打印缓存" = {
+11/21/15 17:20:03   -     "BankerId" = {
+11/21/15 17:20:03   -         "t" = "number"
+11/21/15 17:20:03   -         "v" = "�d�L�e��n�"
+11/21/15 17:20:03   -     }
+11/21/15 17:20:03   -     "acountName" = {
+11/21/15 17:20:03   -         "t" = "string"
+11/21/15 17:20:03   -         "v" = "qlhd-test-device-1"
+11/21/15 17:20:03   -     }
+11/21/15 17:20:03   -     "bankeravatar" = {
+11/21/15 17:20:03   -         "t" = "number"
+11/21/15 17:20:03   -         "v" = "��l� �"
+11/21/15 17:20:03   -     }
+11/21/15 17:20:03   -     "bankercoins" = {
+11/21/15 17:20:03   -         "t" = "number"
+11/21/15 17:20:03   -         "v" = "Ԋ���]���"
+11/21/15 17:20:03   -     }
+11/21/15 17:20:03   -     "bankernickname" = {
+11/21/15 17:20:03   -         "t" = "string"
+11/21/15 17:20:03   -         "v" = "别说、你爱牛"
+11/21/15 17:20:03   -     }
+11/21/15 17:20:03   -     "host" = {
+11/21/15 17:20:03   -         "t" = "string"
+11/21/15 17:20:03   -         "v" = "ws://192.168.1.133"
+11/21/15 17:20:03   -     }
+11/21/15 17:20:03   -     "playeravatar" = {
+11/21/15 17:20:03   -         "t" = "string"
+11/21/15 17:20:03   -         "v" = "3"
+11/21/15 17:20:03   -     }
+11/21/15 17:20:03   -     "playercoins" = {
+11/21/15 17:20:03   -         "t" = "number"
+11/21/15 17:20:03   -         "v" = "����ʯ��"
+11/21/15 17:20:03   -     }
+11/21/15 17:20:03   -     "playernickname" = {
+11/21/15 17:20:03   -         "t" = "string"
+11/21/15 17:20:03   -         "v" = "asd"
+11/21/15 17:20:03   -     }
+11/21/15 17:20:03   -     "port" = {
+11/21/15 17:20:03   -         "t" = "number"
+11/21/15 17:20:03   -         "v" = "��?���Cs��"
+11/21/15 17:20:03   -     }
+11/21/15 17:20:03   -     "roomid" = {
+11/21/15 17:20:03   -         "t" = "number"
+11/21/15 17:20:03   -         "v" = ")�bbk�_"
+11/21/15 17:20:03   -     }
+11/21/15 17:20:03   -     "userid" = {
+11/21/15 17:20:03   -         "t" = "number"
+11/21/15 17:20:03   -         "v" = "A��J^t�Z�}V"
+11/21/15 17:20:03   -     }
+11/21/15 17:20:03   - }
+11/21/15 17:20:03   [INFO] @加载资源
+11/21/15 17:20:04   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:05   [INFO] @HTTP请求结果={"id":33587302,"body":{"result":0,"token":"FDA54B0EB798E764F23571AD0482BF68","userId":20892,"coins":2000,"sex":1,"nick":"Windows","avatar":5,"host":"ws://103.231.66.11","port":20102}}
+11/21/15 17:20:05   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:05   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:05   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:05   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:05   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:05   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:05   [INFO] @连接TCP服务器成功！
+11/21/15 17:20:06   [INFO] inHall   @接收到TCP通知！
+11/21/15 17:20:06   [INFO] @HTTP请求结果={"id":33587309,"body":{"result":0,"coins":"2000","list":[{"id":"1001","type":1,"num":"1","timeLeft":0},{"id":"1002","type":2,"num":1,"timeLeft":-1}]}}
+11/21/15 17:20:06   [INFO] 更新游戏金币成功
+11/21/15 17:20:06   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:06   [INFO] 更新背包信息成功
+11/21/15 17:20:11   [INFO] #发送心跳包
+11/21/15 17:20:12   [INFO] inHall   @接收到TCP通知！
+11/21/15 17:20:34   [INFO] GameState.load() - get values from "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:34   dump from: [string "src/framework/ql/utils/LocalStorage.lua"]:21: in function 'load'
+11/21/15 17:20:34   - "#打印缓存" = {
+11/21/15 17:20:34   -     "BankerId" = {
+11/21/15 17:20:34   -         "t" = "number"
+11/21/15 17:20:34   -         "v" = "�d�L�e��n�"
+11/21/15 17:20:34   -     }
+11/21/15 17:20:34   -     "acountName" = {
+11/21/15 17:20:34   -         "t" = "string"
+11/21/15 17:20:34   -         "v" = "qlhd-test-device-1"
+11/21/15 17:20:34   -     }
+11/21/15 17:20:34   -     "bankeravatar" = {
+11/21/15 17:20:34   -         "t" = "number"
+11/21/15 17:20:34   -         "v" = "��l� �"
+11/21/15 17:20:34   -     }
+11/21/15 17:20:34   -     "bankercoins" = {
+11/21/15 17:20:34   -         "t" = "number"
+11/21/15 17:20:34   -         "v" = "Ԋ���]���"
+11/21/15 17:20:34   -     }
+11/21/15 17:20:34   -     "bankernickname" = {
+11/21/15 17:20:34   -         "t" = "string"
+11/21/15 17:20:34   -         "v" = "别说、你爱牛"
+11/21/15 17:20:34   -     }
+11/21/15 17:20:34   -     "host" = {
+11/21/15 17:20:34   -         "t" = "string"
+11/21/15 17:20:34   -         "v" = "ws://103.231.66.11"
+11/21/15 17:20:34   -     }
+11/21/15 17:20:34   -     "playeravatar" = {
+11/21/15 17:20:34   -         "t" = "string"
+11/21/15 17:20:34   -         "v" = "5"
+11/21/15 17:20:34   -     }
+11/21/15 17:20:34   -     "playercoins" = {
+11/21/15 17:20:34   -         "t" = "number"
+11/21/15 17:20:34   -         "v" = "�s����V"
+11/21/15 17:20:34   -     }
+11/21/15 17:20:34   -     "playernickname" = {
+11/21/15 17:20:34   -         "t" = "string"
+11/21/15 17:20:34   -         "v" = "Windows"
+11/21/15 17:20:34   -     }
+11/21/15 17:20:34   -     "port" = {
+11/21/15 17:20:34   -         "t" = "number"
+11/21/15 17:20:34   -         "v" = "���b0]V��� "
+11/21/15 17:20:34   -     }
+11/21/15 17:20:34   -     "roomid" = {
+11/21/15 17:20:34   -         "t" = "number"
+11/21/15 17:20:34   -         "v" = ")�bbk�_"
+11/21/15 17:20:34   -     }
+11/21/15 17:20:34   -     "userid" = {
+11/21/15 17:20:34   -         "t" = "number"
+11/21/15 17:20:34   -         "v" = "��ҏ�yA.�+��"
+11/21/15 17:20:34   -     }
+11/21/15 17:20:34   - }
+11/21/15 17:20:34   [INFO] @加载资源
+11/21/15 17:20:36   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:36   [INFO] @HTTP请求结果={"id":33587302,"body":{"result":0,"token":"A6A6A5E86DB7EB91E130DC5785F9171A","userId":20892,"coins":2000,"sex":"1","nick":"Windows","avatar":"5","host":"ws://103.231.66.11","port":20102}}
+11/21/15 17:20:36   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:36   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:36   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:36   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:36   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:36   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:37   [INFO] @连接TCP服务器成功！
+11/21/15 17:20:37   [INFO] inHall   @接收到TCP通知！
+11/21/15 17:20:37   [INFO] @HTTP请求结果={"id":33587309,"body":{"result":0,"coins":"2000","list":[{"id":"1001","type":1,"num":"2","timeLeft":0},{"id":"1002","type":2,"num":1,"timeLeft":-1}]}}
+11/21/15 17:20:37   [INFO] 更新游戏金币成功
+11/21/15 17:20:37   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:37   [INFO] 更新背包信息成功
+11/21/15 17:20:50   [INFO] GameState.load() - get values from "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:50   dump from: [string "src/framework/ql/utils/LocalStorage.lua"]:21: in function 'load'
+11/21/15 17:20:50   - "#打印缓存" = {
+11/21/15 17:20:50   -     "BankerId" = {
+11/21/15 17:20:50   -         "t" = "number"
+11/21/15 17:20:50   -         "v" = "�d�L�e��n�"
+11/21/15 17:20:50   -     }
+11/21/15 17:20:50   -     "acountName" = {
+11/21/15 17:20:50   -         "t" = "string"
+11/21/15 17:20:50   -         "v" = "qlhd-test-device-1"
+11/21/15 17:20:50   -     }
+11/21/15 17:20:50   -     "bankeravatar" = {
+11/21/15 17:20:50   -         "t" = "number"
+11/21/15 17:20:50   -         "v" = "��l� �"
+11/21/15 17:20:50   -     }
+11/21/15 17:20:50   -     "bankercoins" = {
+11/21/15 17:20:50   -         "t" = "number"
+11/21/15 17:20:50   -         "v" = "Ԋ���]���"
+11/21/15 17:20:50   -     }
+11/21/15 17:20:50   -     "bankernickname" = {
+11/21/15 17:20:50   -         "t" = "string"
+11/21/15 17:20:50   -         "v" = "别说、你爱牛"
+11/21/15 17:20:50   -     }
+11/21/15 17:20:50   -     "host" = {
+11/21/15 17:20:50   -         "t" = "string"
+11/21/15 17:20:50   -         "v" = "ws://103.231.66.11"
+11/21/15 17:20:50   -     }
+11/21/15 17:20:50   -     "playeravatar" = {
+11/21/15 17:20:50   -         "t" = "string"
+11/21/15 17:20:50   -         "v" = "5"
+11/21/15 17:20:50   -     }
+11/21/15 17:20:50   -     "playercoins" = {
+11/21/15 17:20:50   -         "t" = "number"
+11/21/15 17:20:50   -         "v" = "�s����V"
+11/21/15 17:20:50   -     }
+11/21/15 17:20:50   -     "playernickname" = {
+11/21/15 17:20:50   -         "t" = "string"
+11/21/15 17:20:50   -         "v" = "Windows"
+11/21/15 17:20:50   -     }
+11/21/15 17:20:50   -     "port" = {
+11/21/15 17:20:50   -         "t" = "number"
+11/21/15 17:20:50   -         "v" = "���b0]V��� "
+11/21/15 17:20:50   -     }
+11/21/15 17:20:50   -     "roomid" = {
+11/21/15 17:20:50   -         "t" = "number"
+11/21/15 17:20:50   -         "v" = ")�bbk�_"
+11/21/15 17:20:50   -     }
+11/21/15 17:20:50   -     "userid" = {
+11/21/15 17:20:50   -         "t" = "number"
+11/21/15 17:20:50   -         "v" = "��ҏ�yA.�+��"
+11/21/15 17:20:50   -     }
+11/21/15 17:20:50   - }
+11/21/15 17:20:50   [INFO] @加载资源
+11/21/15 17:20:51   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:52   [INFO] @HTTP请求结果={"id":33587302,"body":{"result":0,"token":"1D8C21D6DE5B2E439C26B67BC5CDEE57","userId":20892,"coins":2000,"sex":"1","nick":"Windows","avatar":"5","host":"ws://103.231.66.11","port":20102}}
+11/21/15 17:20:52   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:52   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:52   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:52   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:52   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:52   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:52   [INFO] @连接TCP服务器成功！
+11/21/15 17:20:52   [INFO] inHall   @接收到TCP通知！
+11/21/15 17:20:53   [INFO] @HTTP请求结果={"id":33587309,"body":{"result":0,"coins":"2000","list":[{"id":"1001","type":1,"num":"3","timeLeft":0},{"id":"1002","type":2,"num":1,"timeLeft":-1}]}}
+11/21/15 17:20:53   [INFO] 更新游戏金币成功
+11/21/15 17:20:53   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:53   [INFO] 更新背包信息成功
+11/21/15 17:20:55   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:55   [INFO] allotTable   配桌
+11/21/15 17:20:56   [INFO] inHall   @接收到TCP通知！
+11/21/15 17:20:56   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:56   [INFO] roomId  101
+11/21/15 17:20:56   [INFO] tableId  1001
+11/21/15 17:20:56   [INFO] loginRoom
+11/21/15 17:20:56   [INFO] inHall   @接收到TCP通知！
+11/21/15 17:20:56   [INFO] loginTable
+11/21/15 17:20:57   [INFO] inHall   @接收到TCP通知！
+11/21/15 17:20:57   [INFO] inGame    @接收到TCP通知！
+11/21/15 17:20:57   [INFO] 获取游戏倒计时时间返回= 0
+11/21/15 17:20:57   [INFO] 获取游戏状态信息返回=0
+11/21/15 17:20:57   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:57   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:57   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:57   [INFO] 获取初始游戏状态是  status0
+11/21/15 17:20:57   [INFO] 当前状态游戏时间是  timer0
+11/21/15 17:20:57   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:57   [INFO] GameState.save() - update file "E:\newbainiu\frameworks\runtime-src\proj.win32\..\..\..\.dat"
+11/21/15 17:20:57   [INFO] 进入时为空闲时间0
+11/21/15 17:20:57   [INFO] inHall   @接收到TCP通知！
+11/21/15 17:20:57   [INFO] inGame    @接收到TCP通知！
+11/21/15 17:20:57   [INFO] 接受到系统消息
+11/21/15 17:20:57   [INFO] inHall   @接收到TCP通知！
+11/21/15 17:20:57   [INFO] inGame    @接收到TCP通知！
+11/21/15 17:20:57   [INFO] 接受到系统消息
+11/21/15 17:20:58   [INFO] @倒计时2秒
+11/21/15 17:20:58   [INFO] countdown  @倒计时3秒
+11/21/15 17:20:59   [INFO] @倒计时1秒
+11/21/15 17:20:59   [INFO] countdown  @倒计时2秒
+11/21/15 17:20:59   [INFO] #发送心跳包
+11/21/15 17:20:59   [INFO] inGame    @接收到TCP通知！
+11/21/15 17:21:00   [INFO] @倒计时0秒
+11/21/15 17:21:00   [INFO] countdown  @倒计时1秒
+11/21/15 17:21:01   [INFO] countdown  @倒计时0秒
+11/21/15 17:21:01   [INFO] inGame    @接收到TCP通知！
+11/21/15 17:21:01   [INFO] 广播下注开始
+11/21/15 17:21:02   [INFO] countdown  @倒计时11秒
+11/21/15 17:21:03   [INFO] countdown  @倒计时10秒
+11/21/15 17:21:04   [INFO] countdown  @倒计时9秒
+11/21/15 17:21:05   [INFO] #发送心跳包
+11/21/15 17:21:05   [INFO] countdown  @倒计时8秒
+11/21/15 17:21:05   [INFO] inGame    @接收到TCP通知！
+11/21/15 17:21:06   [INFO] @停止倒计时

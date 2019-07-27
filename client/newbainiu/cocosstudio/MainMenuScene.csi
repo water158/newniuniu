@@ -1,0 +1,28 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="MainMenuScene" Type="Plist" ID="adf7720a-575d-44bf-965b-83aa757992e3" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="MainMenuScene/activityButton.png" />
+      <FilePathData Path="MainMenuScene/baseboard.png" />
+      <FilePathData Path="MainMenuScene/exchange.png" />
+      <FilePathData Path="MainMenuScene/exit.png" />
+      <FilePathData Path="MainMenuScene/medal1.png" />
+      <FilePathData Path="MainMenuScene/plus.png" />
+      <FilePathData Path="MainMenuScene/quickStart.png" />
+      <FilePathData Path="MainMenuScene/ranking.png" />
+      <FilePathData Path="MainMenuScene/ribbon.png" />
+      <FilePathData Path="MainMenuScene/room_1.png" />
+      <FilePathData Path="MainMenuScene/room_2.png" />
+      <FilePathData Path="MainMenuScene/room_3.png" />
+      <FilePathData Path="MainMenuScene/setting.png" />
+      <FilePathData Path="MainMenuScene/shopping.png" />
+      <FilePathData Path="MainMenuScene/text_1.png" />
+      <FilePathData Path="MainMenuScene/text_2.png" />
+      <FilePathData Path="MainMenuScene/text_3.png" />
+      <FilePathData Path="MainMenuScene/tips.png" />
+      <FilePathData Path="MainMenuScene/spark.png" />
+      <FilePathData Path="Common/Pictureframe.png" />
+    </ImageFiles>
+    <MaxSize Width="1280" Height="720" />
+  </Content>
+</PlistInfoProjectFile>

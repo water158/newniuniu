@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?><manifest android:installLocation="auto" android:versionCode="1" android:versionName="0.0.2" package="com.dapai178.bainiu" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="19"/>
+
+    <uses-feature android:glEsVersion="0x00020000"/>
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.skymobi.pay.app.PayApplication" android:persistent="true" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+
+        <!-- 起凡appId -->
+        <meta-data android:name="QF_APP_ID" android:value="10116"/>
+        <!-- 起凡appkey -->
+        <meta-data android:name="QF_APP_KEY" android:value="b0e238bc8d509d1a9b0dbb1b1ef855b2"/>
+
+        <!-- 起凡互娱 -->
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.dapai178.qfsdk.QFCashier" android:taskAffinity="aaa.aaa"/>
+        <activity android:launchMode="singleTop" android:name="com.dapai178.qfsdk.QFPrepaidCardActivity" android:theme="@style/qf_applicationTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.dapai178.qfsdk.QFWoActivity" android:theme="@style/qf_applicationTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.dapai178.qfsdk.QFCashier_qfb" android:theme="@style/qf_applicationTheme"/>
+
+        <!-- 起凡互娱  结束 -->
+
+
+        <!-- 银联开始 -->
+        <!-- 插件入口界面 -->
+        <activity android:launchMode="singleTask" android:name="com.payeco.android.plugin.PayecoPluginLoadingActivity" android:screenOrientation="portrait"/>
+
+        <!-- 插件拍照界面 -->
+        <activity android:name="com.payeco.android.plugin.PayecoCameraActivity" android:screenOrientation="portrait"/>
+
+        <!-- 插件录像界面 -->
+        <activity android:name="com.payeco.android.plugin.PayecoVedioActivity" android:process="com.payeco.android.plugin.vedio" android:screenOrientation="landscape"/>
+
+        <!-- meta-data需要写在application中 -->
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="DhNxS47YIr3CNdocGoAcy1ts"/>
+        <!-- 银联结束 -->
+
+
+        <!-- wo+支付 -->
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.unicom.woopenchannelpayment.UnicomWoOpenPaymentMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.unicom.woopenchannelpayment.UnicomSMSSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.unicom.woopenchannelpayment.UnicomSMSFaildActivity" android:screenOrientation="portrait"/>
+        <!-- wo+支付结束 -->
+
+
+        <!-- sky star -->
+        <service android:name="com.skymobi.pay.sms.service.SmsService">
+        </service>
+        <service android:name="com.skymobi.pay.sms.service.SynService">
+        </service>
+        <service android:name="com.skymobi.pay.common.service.PayCtrlService">
+        </service>
+        <service android:name="com.skymobi.pay.services.SkyPayRemoteService">
+            <intent-filter>
+                <action android:name="com.skymobi.pay.sdk.ISkyPayRemoteService">
+                </action>
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.skymobi.pay.sms.receiver.BootReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED"/>
+                <action android:name="android.intent.action.NOTIFICATION_ADD"/>
+                <action android:name="android.intent.action.SERVICE_STATE"/>
+                <action android:name="android.intent.action.NOTIFICATION_REMOVE"/>
+                <action android:name="android.intent.action.NOTIFICATION_UPDATE"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.intent.action.ANY_DATA_STATE"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.skymobi.pay.sms.receiver.NetworkReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:configChanges="orientation|navigation|keyboardHidden|keyboard" android:label="@string/app_name" android:name="com.skymobi.pay.sdk.SkyPayActivity" android:theme="@style/transparent">
+        </activity>
+        <!-- sky end -->
+
+
+        <!-- alipay sdk begin -->
+        <activity android:configChanges="orientation|keyboardHidden|navigation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+
+        <!-- alipay sdk end -->
+
+
+        <!-- 斯凯微信支付开始 -->
+        <activity android:configChanges="orientation|navigation|keyboardHidden|keyboard|screenSize" android:name="com.skymobi.pay.wechat.WxPayActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        </activity>
+
+        <!-- 斯凯微信支付结束 -->
+
+
+        <!-- 联动优势话付宝支付开始 -->
+        <activity android:configChanges="orientation|keyboardHidden|navigation" android:excludeFromRecents="true" android:name="com.umpay.huafubao.ui.BillingActivity">
+        </activity>
+        <activity android:configChanges="orientation|keyboardHidden|navigation" android:excludeFromRecents="true" android:name="com.umpay.huafubao.ui.LxBillingActivity">
+        </activity>
+
+        <service android:name="com.umpay.huafubao.service.AppUpgradeService"/>
+        <service android:name="com.umpay.huafubao.service.SmsBillingUpdateService"/>
+
+        <!-- 联动优势话付宝支付结束 -->
+
+
+        <!-- Tell Cocos2dxActivity the name of our .so -->
+        <meta-data android:name="android.app.lib_name" android:value="cocos2dlua"/>
+
+        <activity android:configChanges="orientation|screenSize|keyboardHidden" android:label="@string/app_name" android:name="org.cocos2dx.lua.AppActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.cocos2dx.lua.UMFeedbackActivity" android:screenOrientation="landscape"/>
+
+        <!-- 推送 -->
+        <receiver android:exported="false" android:name="com.umeng.message.NotificationProxyBroadcastReceiver" android:process=":push">
+        </receiver>
+        <receiver android:name="com.umeng.message.SystemReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.MessageReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.ElectionReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4"/>
+
+                <category android:name="umeng"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.umeng.message.RegistrationReceiver">
+            <intent-filter>
+                <action android:name="com.dapai178.bainiu.intent.action.COMMAND"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengMessageBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:exported="true" android:label="PushService" android:name="com.umeng.message.UmengService" android:process=":push">
+            <intent-filter>
+                <action android:name="com.dapai178.bainiu.intent.action.START"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.dapai178.bainiu.intent.action.COCKROACH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4"/>
+
+                <category android:name="umeng"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengIntentService" android:process=":push"/>
+        <service android:exported="true" android:name="com.umeng.message.UmengMessageIntentReceiverService" android:process=":push">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.android.agoo.client.ElectionReceiverService"/>
+            </intent-filter>
+        </service>
+
+        <!-- V1.3.0添加的service，负责下载通知的资源 -->
+        <service android:name="com.umeng.message.UmengDownloadResourceService"/>
+        <!-- 推送 结束 -->
+        <!-- 反馈 -->
+        <activity android:name="com.umeng.fb.ConversationActivity" android:screenOrientation="landscape"/>
+
+        <!-- 反馈 结束 -->
+        <!-- 更新 -->
+        <service android:name="com.umeng.update.net.DownloadingService" android:process=":DownloadingService">
+        </service>
+
+        <activity android:name="com.umeng.update.UpdateDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <!-- 更新结束 -->
+
+        <meta-data android:name="UMENG_APPKEY" android:value="56496ea5e0f55ab8de00282f">
+        </meta-data>
+        <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="6b0b7756b8d29a5b89065fbc2aa9270d">
+        </meta-data>
+        <meta-data android:name="UMENG_CHANNEL" android:value="qifan"/>
+    </application>
+
+    <!-- 进程间通信权限 -->
+    <uses-permission android:name="com.dapai178.chesshall.IPC_PERMISSION"/>
+
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+
+    <!-- 通用 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <!-- 推送 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!-- SDK -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION"/>
+
+</manifest>

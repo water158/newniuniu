@@ -1,0 +1,12 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="loingUI" Type="Plist" ID="95c65d0a-eff8-4fbb-8bae-ca30077219e6" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="False" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="loingUI/bar.png" />
+      <FilePathData Path="loingUI/barbg.png" />
+      <FilePathData Path="loingUI/pot.png" />
+      <FilePathData Path="loingUI/text.png" />
+    </ImageFiles>
+    <MaxSize Width="700" Height="128" />
+  </Content>
+</PlistInfoProjectFile>

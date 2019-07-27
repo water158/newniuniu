@@ -1,0 +1,22 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="DialogHelp" Type="Plist" ID="95ce60e1-94b4-4460-a75c-d48e91faf46d" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="False" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="DialogHelp/jinniu.png" />
+      <FilePathData Path="DialogHelp/meiniu.png" />
+      <FilePathData Path="DialogHelp/niu1.png" />
+      <FilePathData Path="DialogHelp/niu2.png" />
+      <FilePathData Path="DialogHelp/niu3.png" />
+      <FilePathData Path="DialogHelp/niu4.png" />
+      <FilePathData Path="DialogHelp/niu5.png" />
+      <FilePathData Path="DialogHelp/niu6.png" />
+      <FilePathData Path="DialogHelp/niu7.png" />
+      <FilePathData Path="DialogHelp/niu8.png" />
+      <FilePathData Path="DialogHelp/niu9.png" />
+      <FilePathData Path="DialogHelp/niuniu.png" />
+      <FilePathData Path="DialogHelp/yinniu.png" />
+      <FilePathData Path="DialogHelp/zhadan.png" />
+    </ImageFiles>
+    <MaxSize Width="812" Height="512" />
+  </Content>
+</PlistInfoProjectFile>

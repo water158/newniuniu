@@ -1,0 +1,48 @@
+<UserData Version="3.10.0.0">
+  <Properties>
+    <Item Key="CocosRecentOperation">
+      <Value ctype="CocosRecentOperation">
+        <LastPublishType Value="Resource" />
+        <IsLastPublish Value="True" />
+        <LastRunType Value="Mac" />
+      </Value>
+    </Item>
+    <Item Key="PackageParamsKey">
+      <Value ctype="PackageParams">
+        <LuaIsEncrypt Value="False" />
+        <LuaEncryptKey Value="" />
+        <LuaEncryptSign Value="" />
+        <Android_PackageName Value="org.cocos.PlayerView" />
+        <AndroidkeyStore Value="" />
+        <AndroidVersion Value="android-11" />
+        <iOS_Target Value="PlayerView iOS" />
+        <iOS_BundleID Value="" />
+        <Platform Value="None" />
+        <RunPlatform Value="None" />
+        <FrameworkVersion Value="" />
+        <IsDebugKeystore Value="True" />
+        <KeystorePassword Value="" />
+        <KeystoreAliasName Value="" />
+        <KeystoreAliasPassword Value="" />
+        <EnableSourceMap Value="False" />
+        <EnableHTML5Advanced Value="False" />
+      </Value>
+    </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="CalculationNiu.csd" />
+          <FilePathData Path="card.csi" />
+          <FilePathData Path="ChangeLayer.csd" />
+          <FilePathData Path="ChatModeView.csd" />
+          <FilePathData Path="Common.csi" />
+          <FilePathData Path="cowAction.csd" />
+          <FilePathData Path="DialogBinding.csd" />
+          <FilePathData Path="DialogExit.csd" />
+          <FilePathData Path="DialogFindbackPassword.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="DialogFindbackPassword.csd" />
+      </Value>
+    </Item>
+  </Properties>
+</UserData>

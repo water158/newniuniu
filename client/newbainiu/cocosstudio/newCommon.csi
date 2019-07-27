@@ -1,0 +1,21 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="newCommon" Type="Plist" ID="29d82182-5b50-49eb-91dc-d8bc37b8ad11" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="newShop/biaoti.png" />
+      <FilePathData Path="newShop/butiao .png" />
+      <FilePathData Path="newShop/buyButton.png" />
+      <FilePathData Path="newShop/coinN.png" />
+      <FilePathData Path="newShop/coinY.png" />
+      <FilePathData Path="newShop/daojuN.png" />
+      <FilePathData Path="newShop/daojuY.png" />
+      <FilePathData Path="newShop/diban.png" />
+      <FilePathData Path="newShop/neichen.png" />
+      <FilePathData Path="newShop/shopBg.png" />
+      <FilePathData Path="newShop/xhao.png" />
+      <FilePathData Path="newShop/labap.png" />
+      <FilePathData Path="newShop/box.png" />
+    </ImageFiles>
+    <MaxSize Width="512" Height="880" />
+  </Content>
+</PlistInfoProjectFile>

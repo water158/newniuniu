@@ -1,0 +1,20 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Type="Plist" Name="DialogShop" ID="9ad06ce7-ca01-4c79-8a30-9e79fcfee3ca" Version="2.3.2.3" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="DialogShop/Coin0.png" />
+      <FilePathData Path="DialogShop/Coin1.png" />
+      <FilePathData Path="DialogShop/Coin2.png" />
+      <FilePathData Path="DialogShop/Coin3.png" />
+      <FilePathData Path="DialogShop/Coin5.png" />
+      <FilePathData Path="DialogShop/coinBox.png" />
+      <FilePathData Path="DialogShop/CoinsBag.png" />
+      <FilePathData Path="DialogShop/CoinsText.png" />
+      <FilePathData Path="DialogShop/comma.png" />
+      <FilePathData Path="DialogShop/newCoinbg.png" />
+      <FilePathData Path="DialogShop/shopBack.png" />
+      <FilePathData Path="DialogShop/stoCoins.png" />
+    </ImageFiles>
+    <MaxSize Width="1080" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

@@ -1,0 +1,372 @@
+﻿一、web协议：
+1、游客登录:/v1/user/loginByGuest
+req:{deviceId-设备ID，devName-设备名称}
+res:{'result':0, 'token'-登录tcp服务器的令牌, 'userId'-用户ID, 'sex'-性别, 'nick'-昵称, 'avatar'-图像ID, 'host'-IP地址, 'port'-端口号}
+错误返回值：
+E_LOGIN_PARAM_USERNAME = 1;  用户名非法
+E_LOGIN_PARAM_PASSWD = 2;    密码非法
+E_LOGIN_USER_NOTEXIST = 3;   用户不存在
+E_LOGIN_PASSWORD_NOTRIGHT = 4;  密码不正确
+
+2、用户注册:/v1/user/register
+req:{userName-用户名,passwd-密码,devName-设备名称,deviceId-设备ID}
+res:{'result': 0, 'userName'-用户名, 'passwd'-密码}
+错误返回值：
+E_REGISTER_PARAM_USERNAME = 1;用户名非法
+E_REGISTER_PARAM_PASSWD = 2;  密码非法
+E_REGISTER_USER_EXISTS = 3;   用户名已存在
+
+3、用户登录:/v1/user/loginByUserName
+req:{userName-用户名,passwd-密码}
+res:同游客登录返回值
+错误返回值:
+同游客登录错误返回值
+
+4、获取手机验证码：/v1/mobile/getVerifyCode
+req:{mobile-手机号,isCheck-是否需要校验手机号码唯一(1或者0)}
+res:{'result': 0}
+错误返回值:
+E_GETVERIFYCODE_PARAM_MOBILE = 1;    手机号非法
+E_GETVERIFYCODE_USER_NOT_BIND_MOBILE = 2;用户未绑定手机号
+E_GETVERIFYCODE_MOBILE_BINDED = 3;   该手机号已经绑定过，不能再次绑定
+E_GETVERIFYCODE_SEND_FAILED = 4;     验证码发送失败
+
+5、找回密码：/v1/mobile/resetPasswd
+req:{mobile-手机号,verifyCode-验证码,newPasswd-新密码}
+res:{'result':0, 'newPasswd'-新密码}
+错误返回值:
+E_RESETPASSWD_MOBILE_NOT_BIND_USER = 1;手机号未绑定用户
+E_RESETPASSWD_VERIFYCODE_FAILED = 2;   验证码错误
+
+6、获取订单号：/v1/shop/getOrder
+req:{userId-用户ID, productId-商品ID, channelId-渠道号}
+res:{'result':0, channelId-渠道号, orderId-订单号, tradeDesc-交易描述, cost-商品价格}
+错误返回值:
+E_SHOP_GETORDER_PARAM_USERID = 1;    无效的用户ID
+E_SHOP_GETORDER_PARAM_CHANNELID = 2; 无效的渠道号
+E_SHOP_GETORDER_PARAM_PRODUCTID = 3; 无效的商品ID
+E_SHOP_GETORDER_ORDERID_FAILED = 4;  生成订单号失败
+
+7、请求发货：/v1/shop/deliver
+req:{orderList-订单号列表}
+res：{result:0, orders:[{orderId-订单ID,status-订单状态}]}
+错误返回值：
+E_DELIVER_PARAM_ORDERLIST = 1; 无效的订单列表
+订单状态：
+INVALIDORDERID:-1,订单ID不存在(本地删除订单号)
+ORDERCREATE:1,订单待处理(下次继续询问)
+NOTIFY_ORDERTIMEOUT:6,订单处理超时(本地删除订单号)
+NOTIFY_DELIVERSUCCESS:7,订单发货成功(本地删除订单号)
+NOTIFY_DELIVERFAILED:8, 订单发货失败(本地删除订单号)
+NOTIFY_VERIFYFAILED:9   订单认证失败(本地删除订单号)
+
+8、获取背包：/v1/user/package
+req:{userId-用户ID}
+res：{result:0, coins-金币数, list:[{id-道具ID,type-道具类型,num-道具个数(只对个数道具有用),timeLeft-剩余有效时间(只对时间道具有用，小于0时为永久有效)}]}
+错误返回值：
+E_PACKAGE_USER_NOT_EXISTS = 1; 用户不存在
+E_PACKAGE_FAILED = 2;          获取背包失败
+道具信息：
+PROP_TYPE_NUM = 1;  个数道具
+PROP_TYPE_TIME = 2;  时间道具
+PROPID_BROADCAST = 1001; 喇叭道具
+PROPID_SAFEBOX = 1002;   保险箱道具
+
+业务服务器消息ID(ID_BASE_OUTER_ENTITY: 0x00006000)：
+MSGID_SYS_UPGRADE_GUEST:0x00006000 + 1,
+MSGID_SYS_MODIFY_USERINFO:0x00006000 + 2,
+MSGID_SYS_BIND_MOBILE:0x00006000 + 3,
+MSGID_SYS_UNBIND_MOBILE:0x00006000 + 4,
+MSGID_SYS_BROADCAST:0x00006000 + 5,
+MSGID_SYS_SAFEBOX_ENTER:0x00006000 + 6,
+MSGID_SYS_SAFEBOX_OPERATECOINS:0x00006000 + 7,
+MSGID_SYS_SAFEBOX_HISTORY:0x00006000 + 8,
+MSGID_SYS_SAFEBOX_RESETPASSWD:0x00006000 + 9,
+MSGID_SYS_SAFEBOX_MODIFYPASSWD:0x00006000 + 10,
+MSGID_SYS_FREECHARGE:0x00006000 + 11,
+系统消息ID(ID_BASE_OUTER_SYSTEM: 0x00008000)：
+MSGID_SYS_HOLD: 0x00008000 + 1,
+MSGID_SYS_LOGINHALL: 0x00008000 + 2,
+MSGID_SYS_QUICK_START: 0x00008000 + 3,
+MSGID_SYS_JOIN_TABLE: 0x00008000 + 4,
+MSGID_SYS_SIT_DOWN: 0x00008000 + 5,
+MSGID_SYS_READY: 0x00008000 + 6,
+MSGID_SYS_CANCEL_READY: 0x00008000 + 7,
+MSGID_SYS_STAND_UP: 0x00008000 + 8,
+MSGID_SYS_LEAVE_TABLE: 0x00008000 + 9,
+MSGID_SYS_TABLE_EVENT:0x00008000 + 10,
+MSGID_SYS_MULTIPLE_LOGIN: 0x00008000 + 11
+游戏中消息ID(ID_BASE_OUTER_GAME: 0x00010000)：
+MSGID_JOIN_BANKER: 0x00010000 + 1,
+MSGID_JOIN_COINS: 0x00010000 + 2,
+MSGID_CHAT: 0x00010000 + 3,
+MSGID_STATUS: 0x00010000 + 4,
+MSGID_CHANGE_BANKER: 0x00010000 + 5,
+MSGID_RESULT: 0x00010000 + 6,
+MSGID_BOARD_INFO: 0x00010000 + 7，
+MSGID_GIFT_GRAB:0x00010000 + 8,
+MSGID_CHAT_SYSTEM:0x00010000 + 9,
+MSGID_PLAYER_LIST:0x00010000 + 10，
+MSGID_QUIT_BANKER: 0x00010000 + 11，
+MSGID_MONEY_CHG: 0x00010000 + 12
+桌子事件：
+TableEvent:{
+    table_event_login:0,					// 玩家登陆
+    table_event_join_table:1,				// 玩家加入桌子
+    table_event_sit_down:2,					// 玩家坐下
+    table_event_stand_up:3,					// 玩家站起
+    table_event_ready:4,					// 玩家ready
+    table_event_cancel_ready:5,				// 玩家取消ready
+    table_event_leave_table:6,				// 玩家离开桌子
+    table_event_force_quit:7,				// 玩家强退
+    table_event_viewer_join_table:8,		// 旁观者进入
+    table_event_viewer_leave_table:9,		// 旁观者退出
+    table_event_kick_off:10,				// 玩家被踢出
+    table_event_offline:11,					// 玩家断线
+    table_event_reconnect:12,				// 断线重连
+    table_event_game_start:13,				// 游戏开始
+    table_event_game_end:14,				// 游戏结束
+    table_event_game_info:15,				// 玩家gameinfo改变
+    table_event_user_info:16,				// 玩家userinfo改变
+    table_event_table_info:17,				// tableinfo改变
+    table_event_broadcast:18,				// 广播
+    table_event_trustee:19,					// 托管
+    table_event_cancel_trustee:20			// 取消托管
+},
+二、TCP协议-系统：
+1、登录:MSGID_SYS_LOGINHALL
+req:{userId,token}
+res:{result:0, rooms:[{roomId,applyBankerCoins,enterCoins,freeTime,joinTime,gameTime,minCoins,maxCoins}]}
+错误返回值：
+Login:{
+    login_success:0,				// 成功
+    login_failed_unknown:-1,		// 未知错误
+    login_failed_low_version:-2,	// client版本过低,必须升级
+    login_failed_forbidden:-3,	    // 账号限制
+    login_failed_id:-4,			    // 错误的user id
+    login_failed_token:-5,			// 错误的token
+    login_failed_multi:-6		    // 多点登陆
+}
+
+2、配桌：MSGID_SYS_QUICK_START
+req:{userId,roomId-房间ID(快速开始时，为-1),roomType-房间类型}
+res:{result:0, roomId-房间ID, tableId-桌子ID, coins-当前金币值, isFreeCharge-是否有免充(0或者1,是1的情况，才有后边的字段), freeChargeTimes-当前的是第几次免充, freeChargeCoins-免充的金币值, totalFreeChargeTimes-总共的免充次数}
+错误返回值：
+QuickStart:{
+    quick_start_success:0,				// 成功
+    quick_start_failed_unknown:-1,		// 未知错误
+    quick_start_failed_coins_small:-2,	// 金币不足
+    quick_start_failed_coins_big:-3,    // 金币太多
+    quick_start_failed_param_roomid:-4  // 房间ID错误
+}
+
+3、加入桌子：MSGID_SYS_JOIN_TABLE
+req:{tableId-桌子ID}}
+res:{result:0}
+错误返回值：
+JoinTable:{
+    join_table_success:0,				// 成功
+    join_table_reconnect:-1,			// 断线重连
+    join_table_failed_unknown:-2,		// 未知错误
+    join_table_failed_id:-3,			// 错误的table id
+    join_table_failed_multi:-4,		    // 在其他桌子未离开
+    join_table_failed_getout:-5,		// 上局逃跑，游戏未结束
+    join_table_failed_error_state:-6,   // 游戏状态错误
+    join_table_failed_already_full:-7,  // 桌子已坐满
+    join_table_failed_already_join:-8,  // 玩家已在桌子上
+    join_table_failed_limit_min:-9,     // 金币太少
+    join_table_failed_limit_max:-10     //金币太多
+}
+
+4、游客升级：MSGID_SYS_UPGRADE_GUEST
+req:{userName-用户名，passwd-密码}}
+res:{result:0, userName-用户名, passwd-密码}
+错误返回值：
+E_UPGRADEGUEST_PARAM_USERNAME = 1;  用户名非法
+E_UPGRADEGUEST_PARAM_PASSWD = 2;    密码非法
+E_UPGRADEGUEST_USER_EXISTS = 3;     用户已存在
+E_UPGRADEGUEST_NOT_GUEST = 4;       用户非游客
+
+5、修改用户信息：MSGID_SYS_MODIFY_USERINFO
+req:{newNick或者newAvatar或者newPasswd、oldPasswd}
+res:{result:0,newNick或者newAvatar或者newPasswd}
+错误返回值：
+E_MODIFYUSERINFO_PARAM_NICK = 1;         昵称非法
+E_MODIFYUSERINFO_PARAM_AVATAR = 2;       头像非法
+E_MODIFYUSERINFO_PARAM_NEWPASSWD = 3;    新密码非法
+E_MODIFYUSERINFO_OLDPASSWD_NOT_RIGHT = 4;旧密码不正确
+E_MODIFYUSERINFO_NICK_EXIST = 5;        昵称已存在
+E_MODIFYUSERINFO_NOT_REGISTER_USER = 6; 不是注册用户
+
+6、手机号绑定：MSGID_SYS_BIND_MOBILE
+req:{mobile-手机号,verifyCode-验证码}
+res:{result:0,mobile-手机号}
+错误返回值：
+E_MOBILEBIND_VERIFYCODE_FAILED = 1;  验证码错误
+E_MOBILEBIND_MOBILE_BINDED = 2;      手机号已绑定过用户
+E_MOBILEBIND_USER_BINDED = 3;        用户已绑定过手机号
+
+7、手机号解绑：MSGID_SYS_UNBIND_MOBILE
+req:{mobile-手机号,verifyCode-验证码}
+res:{result:0}
+错误返回值：
+E_MOBILEUNBIND_VERIFYCODE_FAILED = 1; 验证码错误
+E_MOBILEUNBIND_USER_NOT_BINDED = 2;   用户未绑定过手机号
+E_MOBILEUNBIND_MOBILE_NOT_RIGHT = 3;  手机号输入不正确
+
+8、系统广播:MSGID_SYS_BROADCAST
+req:{chat-广播内容}
+res:{result:0}]}
+错误返回值：
+E_BROADCAST_NO_BROADCAST_PROP = 1; 没有广播道具
+系统广播通知ntf：
+ntf:{type-广播类型, nick-昵称, chat-广播内容}
+
+9、进入保险箱：MSGID_SYS_SAFEBOX_ENTER
+req:{passwd-密码}
+res:{result:0, safeCoins-保险箱中的金币数}]}
+错误返回值：
+E_SAFEBOX_ENTER_NO_SAFEBOX = 1; 没有保险箱
+E_SAFEBOX_ENTER_PASSWD_NOT_RIGHT = 2; 保险箱密码不正确
+
+10、保险箱金币操作：MSGID_SYS_SAFEBOX_OPERATECOINS
+req:{operateType-操作类型,operateCoins-操作金币, presentedUid-接受赠送的玩家ID}
+res:{result:0, coins-当前金币数, safeCoins-保险箱中的金币数}]}
+错误返回值：
+E_SAFEBOX_OPERATECOINS_PARAM_OPERATECOINS = 1; 操作金币非法
+E_SAFEBOX_OPERATECOINS_PARAM_OPERATETYPE = 2;  操作类型非法
+E_SAFEBOX_OPERATECOINS_NO_SAFEBOX = 3;         没有保险箱
+E_SAFEBOX_OPERATECOINS_COINS_SMALL = 4;        当前金币数太少
+E_SAFEBOX_OPERATECOINS_SAFECOINS_SMALL = 5;    保险箱金币太少
+E_SAFEBOX_OPERATECOINS_PRESENTEDUID_NOT_EXISTS = 6; 赠送的用户ID不存在
+
+11、保险箱历史记录：MSGID_SYS_SAFEBOX_HISTORY
+req:无
+res:{result:0, list-[{date-日期,operate-操作,coins-金币数}]}]}
+错误返回值：
+E_SAFEBOX_HISTORY_FAILED = 1;  获取历史记录失败
+
+12、找回保险箱密码：MSGID_SYS_SAFEBOX_RESETPASSWD
+req:{verifyCode-验证码,mobile-手机号,newPasswd-新密码}
+res:{result:0, newPasswd-新密码}]}
+错误返回值：
+E_SAFEBOX_RESETPWD_MOBILE_NO_MATCH = 1; 手机号和绑定的手机号不匹配
+E_SAFEBOX_RESETPWD_VERIFYCODE_NO_RIGHT = 2; 验证码不正确
+
+13、修改保险箱密码：MSGID_SYS_SAFEBOX_MODIFYPASSWD
+req:{oldPasswd-旧密码,newPasswd-新密码}
+res:{result:0, newPasswd-新密码}]}
+错误返回值：
+E_SAFEBOX_MODIFYPWD_OLDPASSWD_NOT_RIGHT = 1; 旧密码不正确
+
+14、金币不足，请求免充：MSGID_SYS_FREECHARGE
+req:无
+res:{result:0, coins-总的金币, freeChargeTimes-当前的是第几次免充, freeChargeCoins-免充的金币值, totalFreeChargeTimes-总共的免充次数}
+错误返回值：
+E_FREECHARGE_FAILED = 1;  免充失败
+E_FREECHARGE_COINS_ENOUGH = 2; 金币足够
+E_FREECHARGE_NO_TIMES = 3; 无免充次数
+
+15、桌子事件：MSGID_SYS_TABLE_EVENT
+ntf:{eventList:[{eventType-事件类型(根据事件类型来解析后边要跟的数据...)}]}
+
+table_event_kick_off：
+{userId-主动踢人的玩家(-1时为系统), kickedUserId-被踢的用户ID, kickReason-被踢的原因}
+KickReason:{
+    kick_reason_unknow:0,		// 未知
+    kick_reason_no_ready:1,		// 指定时间内不ready
+    kick_reason_limit_min:2,    // 低于最低限制
+    kick_reason_limit_max:3,	// 高于最高限制
+    kick_reason_offline:4,       // 断线
+    kick_reason_limit_operatetime:5 //长时间不操作
+}
+
+三、TCP协议-游戏中：
+1、请求上庄：MSGID_JOIN_BANKER: 
+req:无参数
+res:{result:0}
+错误返回值：
+E_JOINBANKER_USER_NOT_EXISTS = 1;  用户不存在
+E_JOINBANKER_APPLIED = 2;  已经申请个上庄
+通知：MSGID_JOIN_BANKER | ID_NTF：
+{userId-申请的用户ID, nick-用户昵称, avatar-用户图像, coins-用户金币数量}
+
+2、请求下注：MSGID_JOIN_COINS：
+req:{address-下注位置，joinCoins-下注金币}
+res:{result:0, joinCoins-下注金币, coins-玩家当前总的金币}
+错误返回值：
+E_JOINCOINS_USER_NOT_EXISTS = 1; //用户不存在
+E_JOINCOINS_NOT_XIAZHU_TIME = 2; //不是下注时间
+E_JOINCOINS_BIG_BANKER = 3;      //大于庄家的1/8金币
+E_JOINCOINS_BIG_SELF = 4;        //大于自身的1/8
+E_JOINCOINS_SELF_BANKER = 5;     //庄家不能下注
+E_JOINCOINS_FAILED = 6;          //下注失败
+通知：MSGID_JOIN_COINS | ID_NTF：
+#{address-下注地址, joinCoinsList-下注金币列表, totalJoinCoins-该位置总的下注数量}
+{joinCoinsDetail-每一个位置下注金币列表, totalJoinCoins-每一个位置总的下注数量}
+
+3、游戏中聊天：MSGID_CHAT：
+req:{chat-聊天内容}
+res:无
+通知：MSGID_CHAT|ID_NTF：
+{nick-昵称, chat-聊天内容}
+
+4、通知当前游戏状态：MSGID_STATUS: 
+ntf：
+{status-当前游戏状态}
+
+5、通知换庄：MSGID_CHANGE_BANKER: 
+ntf：
+{oldBankerId-旧庄家用户ID,newBankerId-新庄家用户ID, nick-新庄家昵称, avatar-新庄家用户图像, coins-金币数量}
+
+6、通知游戏结果：MSGID_RESULT: 
+ntf：
+{isBanker-是否是庄家,winCoinsTotal-本局总共输赢的金币, coins-金币总量, otherWinCoins-其他人赢的税前金币数, bankerWinCoins-庄家赢的筹码数, bankerCoins-庄家金币,cardInfo-每个位置牌的信息, niuInfo-每个位置牛的信息, winFan-每个位置输赢的倍数, joinCoins-每个位置的下注金额}
+
+7、通知玩家当前的桌面信息：MSGID_BOARD_INFO：
+ntf：
+{timer-倒计时时间，status-当前游戏状态，winHistory-历史记录，coins-当前的金币数, joinCoins-自己下了多少筹码，totalJoinCoins-每个位置的下注总值, totalJoinCoinsDetail-每个位置的下注详情, bankerInfo-{bankerId-庄家用户ID, nick-昵称, avatar-图像，coins-金币总量, bankerTimes-当前庄家已经坐了多少庄}，
+resultInfo-{bankerWinCoins-庄家赢多少筹码，cardInfo-每个位置牌的信息, niuInfo-每个位置牛的信息, winFan-每个位置输赢的倍数, winCoinsTotal-本局总共赢了多少金币，otherWinCoins-其他人赢的税前金币数，coins-金币总量}, waitBanker-[{userId-等待上庄的用户ID, nick-昵称, coins-金币}]}
+
+8、通知抢红包：MSGID_GIFT_GRAB：
+ntf:{}无参数
+
+9、请求抢红包：MSGID_GIFT_GRAB：
+req：无参数
+res：{result：0,grabCoins-抢到的红包中金币值,coins-总的金币值}
+错误返回值：
+E_GIFTGRAB_USER_NOT_EXISTS = 1;
+E_GIFTGRAB_GIFT_EMPTY = 2;  红包已被抢空
+
+10、系统消息：MSGID_CHAT_SYSTEM；
+ntf：
+{'tips'-系统消息内容}
+
+11、获取玩家列表：MSGID_PLAYER_LIST
+req：{page-第几页玩家列表(页码从1开始)}
+res：{result：0, playerList:[{avatar-用户图像,nick-昵称,coins-金币}], page-当前是第几页数据}
+错误返回值：
+E_PLAYERLIST_PARAM_PAGE = 1;  无效的页码
+
+12、退出庄家：MSGID_QUIT_BANKER：
+req：无参数
+res：{result:0}
+ntf：{userId-退庄的用户ID}
+错误返回值：
+E_QUITBANKER_USER_NOT_EXISTS = 1;  用户不存在
+E_QUITBANKER_FAILED = 2; 退庄失败
+
+13、玩家请求退出游戏：MSGID_SYS_LEAVE_TABLE
+req：无参数
+ack:
+{'result':0}
+错误返回值：
+leave_table_result_failed_error_tableid:1,          // 错误的桌子ID
+leave_table_result_failed_not_join:1,				// 没有加入
+leave_table_result_failed_error_identity:2,			// 错误的身份
+
+14、通知玩家金币发生变化：MSGID_MONEY_CHG
+ntf：
+{userId-用户ID, coins-用户当前金币数}
+
+14:37:20

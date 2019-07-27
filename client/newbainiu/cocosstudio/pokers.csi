@@ -1,0 +1,42 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="pokers" Type="Plist" ID="c88b1b35-11a6-4b20-8cec-432d0042fac0" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="False" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="pokers/b1.png" />
+      <FilePathData Path="pokers/b10.png" />
+      <FilePathData Path="pokers/b11.png" />
+      <FilePathData Path="pokers/b12.png" />
+      <FilePathData Path="pokers/b13.png" />
+      <FilePathData Path="pokers/b2.png" />
+      <FilePathData Path="pokers/b3.png" />
+      <FilePathData Path="pokers/b4.png" />
+      <FilePathData Path="pokers/b5.png" />
+      <FilePathData Path="pokers/b6.png" />
+      <FilePathData Path="pokers/b7.png" />
+      <FilePathData Path="pokers/b8.png" />
+      <FilePathData Path="pokers/b9.png" />
+      <FilePathData Path="pokers/floret1.png" />
+      <FilePathData Path="pokers/floret2.png" />
+      <FilePathData Path="pokers/floret3.png" />
+      <FilePathData Path="pokers/floret4.png" />
+      <FilePathData Path="pokers/flower1.png" />
+      <FilePathData Path="pokers/flower2.png" />
+      <FilePathData Path="pokers/flower3.png" />
+      <FilePathData Path="pokers/flower4.png" />
+      <FilePathData Path="pokers/r1.png" />
+      <FilePathData Path="pokers/r10.png" />
+      <FilePathData Path="pokers/r11.png" />
+      <FilePathData Path="pokers/r12.png" />
+      <FilePathData Path="pokers/r13.png" />
+      <FilePathData Path="pokers/r2.png" />
+      <FilePathData Path="pokers/r3.png" />
+      <FilePathData Path="pokers/r4.png" />
+      <FilePathData Path="pokers/r5.png" />
+      <FilePathData Path="pokers/r6.png" />
+      <FilePathData Path="pokers/r7.png" />
+      <FilePathData Path="pokers/r8.png" />
+      <FilePathData Path="pokers/r9.png" />
+    </ImageFiles>
+    <MaxSize Width="200" Height="200" />
+  </Content>
+</PlistInfoProjectFile>

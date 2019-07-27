@@ -1,0 +1,54 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="mainSceneP" Type="Plist" ID="3c21bd7a-a8e0-422e-bc73-44777fd1701b" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="mainSceneP/apply.png" />
+      <FilePathData Path="mainSceneP/back.png" />
+      <FilePathData Path="mainSceneP/cancle.png" />
+      <FilePathData Path="mainSceneP/ChatInput.png" />
+      <FilePathData Path="mainSceneP/clock.png" />
+      <FilePathData Path="mainSceneP/di.png" />
+      <FilePathData Path="mainSceneP/downButton.png" />
+      <FilePathData Path="mainSceneP/front.png" />
+      <FilePathData Path="mainSceneP/huang.png" />
+      <FilePathData Path="mainSceneP/ImaView_queue.png" />
+      <FilePathData Path="mainSceneP/land.png" />
+      <FilePathData Path="mainSceneP/leftsButton.png" />
+      <FilePathData Path="mainSceneP/lightButton.png" />
+      <FilePathData Path="mainSceneP/lightring-1.png" />
+      <FilePathData Path="mainSceneP/medal.png" />
+      <FilePathData Path="mainSceneP/NoSelectChat.png" />
+      <FilePathData Path="mainSceneP/NoSelectPlayer.png" />
+      <FilePathData Path="mainSceneP/openPokerTime.png" />
+      <FilePathData Path="mainSceneP/pull-down-button.png" />
+      <FilePathData Path="mainSceneP/reverse.png" />
+      <FilePathData Path="mainSceneP/score.png" />
+      <FilePathData Path="mainSceneP/SelectChat.png" />
+      <FilePathData Path="mainSceneP/SelectPlayer.png" />
+      <FilePathData Path="mainSceneP/SendButton.png" />
+      <FilePathData Path="mainSceneP/shop.png" />
+      <FilePathData Path="mainSceneP/sky.png" />
+      <FilePathData Path="mainSceneP/tian.png" />
+      <FilePathData Path="mainSceneP/tobebanker.png" />
+      <FilePathData Path="mainSceneP/touming.png" />
+      <FilePathData Path="mainSceneP/upButton.png" />
+      <FilePathData Path="mainSceneP/voice.png" />
+      <FilePathData Path="mainSceneP/xiazhuTime.png" />
+      <FilePathData Path="mainSceneP/xiuxiTime.png" />
+      <FilePathData Path="mainSceneP/xiuya.png" />
+      <FilePathData Path="mainSceneP/xuan.png" />
+      <FilePathData Path="mainSceneP/yellow.png" />
+      <FilePathData Path="mainSceneP/Zdi.png" />
+      <FilePathData Path="mainSceneP/Zhuang.png" />
+      <FilePathData Path="mainSceneP/zhuangjia.png" />
+      <FilePathData Path="mainSceneP/zhuangjiaIcon.png" />
+      <FilePathData Path="mainSceneP/Ztian.png" />
+      <FilePathData Path="mainSceneP/Zxuan.png" />
+      <FilePathData Path="mainSceneP/ingameBack.png" />
+      <FilePathData Path="mainSceneP/seting.png" />
+      <FilePathData Path="mainSceneP/grade.png" />
+      <FilePathData Path="mainSceneP/bringLight.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="580" />
+  </Content>
+</PlistInfoProjectFile>

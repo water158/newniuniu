@@ -1,0 +1,24 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="text" Type="Plist" ID="12f6f77d-4b64-4d10-a0e5-a6d968f173cd" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="Text/blinding.png" />
+      <FilePathData Path="Text/feedback.png" />
+      <FilePathData Path="Text/findBackCode.png" />
+      <FilePathData Path="Text/help.png" />
+      <FilePathData Path="Text/loing.png" />
+      <FilePathData Path="Text/modify.png" />
+      <FilePathData Path="Text/modifyCode.png" />
+      <FilePathData Path="Text/perinfor.png" />
+      <FilePathData Path="Text/record.png" />
+      <FilePathData Path="Text/register.png" />
+      <FilePathData Path="Text/seting.png" />
+      <FilePathData Path="Text/share.png" />
+      <FilePathData Path="Text/soluphone.png" />
+      <FilePathData Path="Text/tips.png" />
+      <FilePathData Path="Text/mysafeBox.png" />
+      <FilePathData Path="Text/safeBox.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="300" />
+  </Content>
+</PlistInfoProjectFile>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>loingUI/bar.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{532,46}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{532,46}</string>
+			</dict>
+			<key>loingUI/barbg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,46},{532,46}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{532,46}</string>
+			</dict>
+			<key>loingUI/pot.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{655,0},{11,10}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{11,10}</string>
+			</dict>
+			<key>loingUI/text.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{532,0},{123,28}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{123,28}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>loingUI.png</string>
+			<key>realTextureFileName</key>
+			<string>loingUI.png</string>
+			<key>size</key>
+			<string>{666,92}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>666</integer>
+			<key>height</key>
+			<integer>92</integer>
+		</dict>
+	</dict>
+</plist>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">同聚牛牛</string>
+    <string name="pay_success">支付成功</string>
+    <string name="pay_failed">支付失败</string>
+    <string name="pay_failed_width_code">支付失败，错误码(%d)</string>
+    <string name="lb_downloading">正在下载中...</string>
+    <string name="msg_no_sdcard">下载失败，请插入外置存储卡</string>
+    <string name="msg_start_download">开始下载\"%s\"</string>
+    <string name="msg_downloading">\"%s\"正在下载中...</string>
+</resources>

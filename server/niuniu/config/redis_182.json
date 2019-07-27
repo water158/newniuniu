@@ -1,0 +1,36 @@
+{
+	"development":{
+        "redis_user":{
+            "host":"127.0.0.1",
+            "port":"6380",
+            "db":0
+        },
+        "redis_game":{
+            "host":"127.0.0.1",
+            "port":"6380",
+            "db":1
+        },
+        "redis_cache":{
+            "host":"127.0.0.1",
+            "port":"6380",
+            "db":2
+        }
+    },
+    "production":{
+        "redis_user":{
+            "host":"127.0.0.1",
+            "port":"6380",
+            "db":0
+        },
+        "redis_game":{
+            "host":"127.0.0.1",
+            "port":"6380",
+            "db":1
+        },
+        "redis_cache":{
+            "host":"127.0.0.1",
+            "port":"6380",
+            "db":2
+        }
+    }
+}

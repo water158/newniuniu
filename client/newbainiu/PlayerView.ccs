@@ -1,0 +1,454 @@
+<Solution>
+  <PropertyGroup Name="PlayerView" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="audio">
+          <Audio Name="audio_coins.mp3" />
+          <Audio Name="BeginBet.mp3" />
+          <Audio Name="buttondown.wav" />
+          <Audio Name="cowsound.mp3" />
+          <Audio Name="dealPoker.mp3" />
+          <Audio Name="endlost.mp3" />
+          <Audio Name="endwin.mp3" />
+          <Audio Name="HALL.mp3" />
+          <Audio Name="INGAME.mp3" />
+          <Audio Name="moneyLots.mp3" />
+          <Audio Name="N_0.mp3" />
+          <Audio Name="N_1.mp3" />
+          <Audio Name="N_10.mp3" />
+          <Audio Name="N_11.mp3" />
+          <Audio Name="N_12.mp3" />
+          <Audio Name="N_13.mp3" />
+          <Audio Name="N_2.mp3" />
+          <Audio Name="N_3.mp3" />
+          <Audio Name="N_4.mp3" />
+          <Audio Name="N_5.mp3" />
+          <Audio Name="N_6.mp3" />
+          <Audio Name="N_7.mp3" />
+          <Audio Name="N_8.mp3" />
+          <Audio Name="N_9.mp3" />
+          <Audio Name="openCard.mp3" />
+          <Audio Name="prepare.mp3" />
+          <Audio Name="second.mp3" />
+        </Folder>
+        <Folder Name="bigImage">
+          <Image Name="bgGuan.png" />
+          <Image Name="bglayer.jpg" />
+          <Image Name="dialogbackground.png" />
+          <Image Name="GrabBankerBg.jpg" />
+          <Image Name="hallBackground.jpg" />
+          <Image Name="light.png" />
+          <Image Name="loingBg.jpg" />
+        </Folder>
+        <Folder Name="card">
+          <Image Name="b_1.png" />
+          <Image Name="b_1_1.png" />
+          <Image Name="b_1_2.png" />
+          <Image Name="b_10.png" />
+          <Image Name="b_11.png" />
+          <Image Name="b_12.png" />
+          <Image Name="b_13.png" />
+          <Image Name="b_2.png" />
+          <Image Name="b_2_1.png" />
+          <Image Name="b_2_2.png" />
+          <Image Name="b_3.png" />
+          <Image Name="b_4.png" />
+          <Image Name="b_5.png" />
+          <Image Name="b_6.png" />
+          <Image Name="b_7.png" />
+          <Image Name="b_8.png" />
+          <Image Name="b_9.png" />
+          <Image Name="card_front.png" />
+          <Image Name="l_1_1.png" />
+          <Image Name="l_1_2.png" />
+          <Image Name="l_2_1.png" />
+          <Image Name="l_2_2.png" />
+          <Image Name="r_1.png" />
+          <Image Name="r_10.png" />
+          <Image Name="r_11.png" />
+          <Image Name="r_12.png" />
+          <Image Name="r_13.png" />
+          <Image Name="r_2.png" />
+          <Image Name="r_3.png" />
+          <Image Name="r_4.png" />
+          <Image Name="r_5.png" />
+          <Image Name="r_6.png" />
+          <Image Name="r_7.png" />
+          <Image Name="r_8.png" />
+          <Image Name="r_9.png" />
+          <Image Name="t_0.png" />
+          <Image Name="t_1.png" />
+          <Image Name="t_10.png" />
+          <Image Name="t_11.png" />
+          <Image Name="t_12.png" />
+          <Image Name="t_13.png" />
+          <Image Name="t_2.png" />
+          <Image Name="t_3.png" />
+          <Image Name="t_4.png" />
+          <Image Name="t_5.png" />
+          <Image Name="t_6.png" />
+          <Image Name="t_7.png" />
+          <Image Name="t_8.png" />
+          <Image Name="t_9.png" />
+        </Folder>
+        <Folder Name="Common">
+          <Image Name="avatar_1.png" />
+          <Image Name="avatar_2.png" />
+          <Image Name="avatar_3.png" />
+          <Image Name="avatar_4.png" />
+          <Image Name="avatar_5.png" />
+          <Image Name="b.png" />
+          <Image Name="bg_toast.png" />
+          <Image Name="birdlight.png" />
+          <Image Name="Blink_1 (1).png" />
+          <Image Name="Blink_1 (2).png" />
+          <Image Name="cancel.png" />
+          <Image Name="cashN.png" />
+          <Image Name="cashY.png" />
+          <Image Name="changepassword.png" />
+          <Image Name="changepasswordN.png" />
+          <Image Name="changepasswordY.png" />
+          <Image Name="chatButtonN.png" />
+          <Image Name="chatButtonY.png" />
+          <Image Name="coins.png" />
+          <Image Name="couplebackmenu.png" />
+          <Image Name="Dealer.png" />
+          <Image Name="depositButton.png" />
+          <Image Name="depositN.png" />
+          <Image Name="depositY.png" />
+          <Image Name="dian9.png" />
+          <Image Name="ensure.png" />
+          <Image Name="exit.png" />
+          <Image Name="givingButton.png" />
+          <Image Name="helpmenu.png" />
+          <Image Name="inputBox.png" />
+          <Image Name="InputboxCoins.png" />
+          <Image Name="j.png" />
+          <Image Name="KabaN.png" />
+          <Image Name="KabaY.png" />
+          <Image Name="laba.png" />
+          <Image Name="laba_bar.png" />
+          <Image Name="labaaa.png" />
+          <Image Name="lamp_1 (1).png" />
+          <Image Name="lamp_1 (2).png" />
+          <Image Name="light.png" />
+          <Image Name="loginButton.png" />
+          <Image Name="LOGO1.png" />
+          <Image Name="LOGO2.png" />
+          <Image Name="lose.png" />
+          <Image Name="loseText.png" />
+          <Image Name="mobilePhon_.png" />
+          <Image Name="mobilePhone.png" />
+          <Image Name="musicText.png" />
+          <Image Name="n0.png" />
+          <Image Name="n1.png" />
+          <Image Name="Pictureframe.png" />
+          <Image Name="playerListN.png" />
+          <Image Name="playerListY.png" />
+          <Image Name="poker.png" />
+          <Image Name="Prepaidphonerecords.png" />
+          <Image Name="qiehuanzhanghao.png" />
+          <Image Name="recordN.png" />
+          <Image Name="recordY.png" />
+          <Image Name="redPacket.png" />
+          <Image Name="referButton.png" />
+          <Image Name="safeadd.png" />
+          <Image Name="safeBox.png" />
+          <Image Name="safeminus.png" />
+          <Image Name="selected.png" />
+          <Image Name="SendButton.png" />
+          <Image Name="Sendcode.png" />
+          <Image Name="slider.png" />
+          <Image Name="sliderbg.png" />
+          <Image Name="slidermenu.png" />
+          <Image Name="small.png" />
+          <Image Name="soundText.png" />
+          <Image Name="touming.png" />
+          <Image Name="upButton.png" />
+          <Image Name="winRibbonp.png" />
+          <Image Name="winText.png" />
+          <Image Name="winZhi.png" />
+          <Image Name="withdrawalsButton.png" />
+          <Image Name="xingxing.png" />
+          <Image Name="y0.png" />
+          <Image Name="y1.png" />
+          <Image Name="zhuang.png" />
+        </Folder>
+        <Folder Name="cowAction">
+          <Image Name="beginText.png" />
+          <Image Name="bow1.png" />
+          <Image Name="bow2.png" />
+          <Image Name="bow3.png" />
+          <Image Name="cow.png" />
+        </Folder>
+        <Folder Name="DialogHelp">
+          <Image Name="jinniu.png" />
+          <Image Name="meiniu.png" />
+          <Image Name="niu1.png" />
+          <Image Name="niu2.png" />
+          <Image Name="niu3.png" />
+          <Image Name="niu4.png" />
+          <Image Name="niu5.png" />
+          <Image Name="niu6.png" />
+          <Image Name="niu7.png" />
+          <Image Name="niu8.png" />
+          <Image Name="niu9.png" />
+          <Image Name="niuniu.png" />
+          <Image Name="yinniu.png" />
+          <Image Name="zhadan.png" />
+        </Folder>
+        <Folder Name="DialogShop">
+          <Image Name="Coin0.png" />
+          <Image Name="Coin1.png" />
+          <Image Name="Coin2.png" />
+          <Image Name="Coin3.png" />
+          <Image Name="Coin5.png" />
+          <Image Name="CoinsBag.png" />
+          <Image Name="CoinsText.png" />
+          <Image Name="comma.png" />
+          <Image Name="shopBack.png" />
+        </Folder>
+        <Folder Name="farmar">
+          <Image Name="chip-1000000-1.png" />
+          <Image Name="chip-100000-1.png" />
+          <Image Name="chip-10000-1.png" />
+          <Image Name="chip-1000-1.png" />
+          <Image Name="chip-100-1.png" />
+          <Image Name="chip-10-1.png" />
+          <Image Name="chip-50000-1.png" />
+          <Image Name="chip-5000-1.png" />
+          <Image Name="chip-500-1.png" />
+          <Image Name="chip-50-1.png" />
+        </Folder>
+        <Folder Name="fontFolder">
+          <Fnt Name="clo.fnt" />
+          <Fnt Name="hui.fnt" />
+          <Fnt Name="jinse.fnt" />
+          <Fnt Name="multiple.fnt" />
+        </Folder>
+        <Folder Name="grabBanker">
+          <Image Name="alarm_clock.png" />
+          <Image Name="alpha_bg.png" />
+          <Image Name="banker.png" />
+          <Image Name="bave_niu.png" />
+          <Image Name="btn_have.png" />
+          <Image Name="btn_not.png" />
+          <Image Name="bubble.png" />
+          <Image Name="chat_icon.png" />
+          <Image Name="coins.png" />
+          <Image Name="dont_grab.png" />
+          <Image Name="drop_down_menu.png" />
+          <Image Name="floor_bg.png" />
+          <Image Name="gift.png" />
+          <Image Name="gift_light.png" />
+          <Image Name="grab.png" />
+          <Image Name="head.png" />
+          <Image Name="multiple.png" />
+          <Image Name="not_niu.png" />
+          <Image Name="num_bg.png" />
+          <Image Name="personal_information.png" />
+          <Image Name="plus.png" />
+          <Image Name="red_packet.png" />
+          <Image Name="robot.png" />
+          <Image Name="rqual.png" />
+        </Folder>
+        <Folder Name="loingUI">
+          <Image Name="bar.png" />
+          <Image Name="barbg.png" />
+          <Image Name="pot.png" />
+          <Image Name="text.png" />
+        </Folder>
+        <Folder Name="MainMenuScene">
+          <Image Name="activityButton.png" />
+          <Image Name="baseboard.png" />
+          <Image Name="exchange.png" />
+          <Image Name="exit.png" />
+          <Image Name="medal1.png" />
+          <Image Name="plus.png" />
+          <Image Name="quickStart.png" />
+          <Image Name="ranking.png" />
+          <Image Name="ribbon.png" />
+          <Image Name="room_1.png" />
+          <Image Name="room_2.png" />
+          <Image Name="room_3.png" />
+          <Image Name="setting.png" />
+          <Image Name="shopping.png" />
+          <Image Name="spark.png" />
+          <Image Name="text_1.png" />
+          <Image Name="text_2.png" />
+          <Image Name="text_3.png" />
+          <Image Name="tips.png" />
+        </Folder>
+        <Folder Name="mainSceneP">
+          <Image Name="apply.png" />
+          <Image Name="back.png" />
+          <Image Name="bringLight.png" />
+          <Image Name="cancle.png" />
+          <Image Name="ChatInput.png" />
+          <Image Name="clock.png" />
+          <Image Name="di.png" />
+          <Image Name="downButton.png" />
+          <Image Name="front.png" />
+          <Image Name="grade.png" />
+          <Image Name="huang.png" />
+          <Image Name="ImaView_queue.png" />
+          <Image Name="ingameBack.png" />
+          <Image Name="land.png" />
+          <Image Name="leftsButton.png" />
+          <Image Name="lightButton.png" />
+          <Image Name="lightring-1.png" />
+          <Image Name="medal.png" />
+          <Image Name="NoSelectChat.png" />
+          <Image Name="NoSelectPlayer.png" />
+          <Image Name="openPokerTime.png" />
+          <Image Name="pull-down-button.png" />
+          <Image Name="reverse.png" />
+          <Image Name="score.png" />
+          <Image Name="SelectChat.png" />
+          <Image Name="SelectPlayer.png" />
+          <Image Name="SendButton.png" />
+          <Image Name="seting.png" />
+          <Image Name="shop.png" />
+          <Image Name="sky.png" />
+          <Image Name="tian.png" />
+          <Image Name="tobebanker.png" />
+          <Image Name="touming.png" />
+          <Image Name="upButton.png" />
+          <Image Name="voice.png" />
+          <Image Name="xiazhuTime.png" />
+          <Image Name="xiuxiTime.png" />
+          <Image Name="xiuya.png" />
+          <Image Name="xuan.png" />
+          <Image Name="yellow.png" />
+          <Image Name="Zdi.png" />
+          <Image Name="Zhuang.png" />
+          <Image Name="zhuangjia.png" />
+          <Image Name="zhuangjiaIcon.png" />
+          <Image Name="Ztian.png" />
+          <Image Name="Zxuan.png" />
+        </Folder>
+        <Folder Name="newShop">
+          <Image Name="biaoti.png" />
+          <Image Name="box.png" />
+          <Image Name="butiao .png" />
+          <Image Name="buyButton.png" />
+          <Image Name="coinN.png" />
+          <Image Name="coinY.png" />
+          <Image Name="cracks.png" />
+          <Image Name="daojuN.png" />
+          <Image Name="daojuY.png" />
+          <Image Name="diban.png" />
+          <Image Name="labap.png" />
+          <Image Name="neichen.png" />
+          <Image Name="shopBg.png" />
+          <Image Name="xhao.png" />
+        </Folder>
+        <Folder Name="pokers">
+          <Image Name="b1.png" />
+          <Image Name="b10.png" />
+          <Image Name="b11.png" />
+          <Image Name="b12.png" />
+          <Image Name="b13.png" />
+          <Image Name="b2.png" />
+          <Image Name="b3.png" />
+          <Image Name="b4.png" />
+          <Image Name="b5.png" />
+          <Image Name="b6.png" />
+          <Image Name="b7.png" />
+          <Image Name="b8.png" />
+          <Image Name="b9.png" />
+          <Image Name="floret1.png" />
+          <Image Name="floret2.png" />
+          <Image Name="floret3.png" />
+          <Image Name="floret4.png" />
+          <Image Name="flower1.png" />
+          <Image Name="flower2.png" />
+          <Image Name="flower3.png" />
+          <Image Name="flower4.png" />
+          <Image Name="r1.png" />
+          <Image Name="r10.png" />
+          <Image Name="r11.png" />
+          <Image Name="r12.png" />
+          <Image Name="r13.png" />
+          <Image Name="r2.png" />
+          <Image Name="r3.png" />
+          <Image Name="r4.png" />
+          <Image Name="r5.png" />
+          <Image Name="r6.png" />
+          <Image Name="r7.png" />
+          <Image Name="r8.png" />
+          <Image Name="r9.png" />
+        </Folder>
+        <Folder Name="Text">
+          <Image Name="blinding.png" />
+          <Image Name="feedback.png" />
+          <Image Name="findBackCode.png" />
+          <Image Name="help.png" />
+          <Image Name="loing.png" />
+          <Image Name="modify.png" />
+          <Image Name="modifyCode.png" />
+          <Image Name="mysafeBox.png" />
+          <Image Name="perinfor.png" />
+          <Image Name="record.png" />
+          <Image Name="register.png" />
+          <Image Name="safeBox.png" />
+          <Image Name="seting.png" />
+          <Image Name="share.png" />
+          <Image Name="soluphone.png" />
+          <Image Name="tips.png" />
+        </Folder>
+        <Project Name="blinkeye.csd" Type="Node" />
+        <Project Name="CalculationNiu.csd" Type="Node" />
+        <PlistInfo Name="card.csi" Type="Plist" />
+        <Project Name="ChangeLayer.csd" Type="Layer" />
+        <Project Name="ChatModeView.csd" Type="Layer" />
+        <PlistInfo Name="Common.csi" Type="Plist" />
+        <Project Name="cowAction.csd" Type="Node" />
+        <Project Name="DialogBinding.csd" Type="Layer" />
+        <Project Name="DialogExit.csd" Type="Layer" />
+        <Project Name="DialogFindbackPassword.csd" Type="Layer" />
+        <Project Name="DialogGivingTipView.csd" Type="Layer" />
+        <Project Name="DialogHelp.csd" Type="Layer" />
+        <PlistInfo Name="DialogHelp.csi" Type="Plist" />
+        <Project Name="DialogLogin.csd" Type="Layer" />
+        <Project Name="DialogLose.csd" Type="Layer" />
+        <Project Name="DialogModifyavatar.csd" Type="Layer" />
+        <Project Name="DialogModifyCode.csd" Type="Layer" />
+        <Project Name="DialogPersonalInfo.csd" Type="Layer" />
+        <Project Name="DialogPrepaidRecords.csd" Type="Layer" />
+        <Project Name="DialogRegister.csd" Type="Layer" />
+        <Project Name="DialogSafeBox.csd" Type="Layer" />
+        <Project Name="DialogSafeBoxGiving.csd" Type="Layer" />
+        <Project Name="DialogSafeBoxLogin.csd" Type="Layer" />
+        <Project Name="DialogSeting.csd" Type="Layer" />
+        <Project Name="DialogShop.csd" Type="Layer" />
+        <Project Name="DialogWin.csd" Type="Layer" />
+        <PlistInfo Name="farmar.csi" Type="Plist" />
+        <Project Name="farmarView.csd" Type="Layer" />
+        <PlistInfo Name="grabBanker.csi" Type="Plist" />
+        <Project Name="GrabBankerScene.csd" Type="Scene" />
+        <Project Name="HallLampAction.csd" Type="Node" />
+        <Project Name="horn.csd" Type="Node" />
+        <Project Name="hornView.csd" Type="Layer" />
+        <Project Name="LoadingScene.csd" Type="Scene" />
+        <Project Name="LogoAction.csd" Type="Node" />
+        <PlistInfo Name="loingUI.csi" Type="Plist" />
+        <Project Name="MainMenuScene.csd" Type="Scene" />
+        <PlistInfo Name="MainMenuScene.csi" Type="Plist" />
+        <PlistInfo Name="mainSceneP.csi" Type="Plist" />
+        <Project Name="moveCoinsView.csd" Type="Layer" />
+        <PlistInfo Name="newCommon.csi" Type="Plist" />
+        <Project Name="PlayerHorizontal.csd" Type="Node" />
+        <Project Name="PlayerVertical.csd" Type="Node" />
+        <Project Name="PlayingScene.csd" Type="Scene" />
+        <PlistInfo Name="pokers.csi" Type="Plist" />
+        <Project Name="PokerView.csd" Type="Node" />
+        <Project Name="RedpacketView.csd" Type="Layer" />
+        <PlistInfo Name="text.csi" Type="Plist" />
+        <Project Name="UserlistView.csd" Type="Layer" />
+        <Project Name="waitBankerList.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

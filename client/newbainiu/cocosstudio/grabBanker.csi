@@ -1,0 +1,32 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="grabBanker" Type="Plist" ID="7351cdc3-3259-4d9b-aa8e-e68ba9b059cc" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="False" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="grabBanker/alarm_clock.png" />
+      <FilePathData Path="grabBanker/alpha_bg.png" />
+      <FilePathData Path="grabBanker/banker.png" />
+      <FilePathData Path="grabBanker/bave_niu.png" />
+      <FilePathData Path="grabBanker/btn_have.png" />
+      <FilePathData Path="grabBanker/btn_not.png" />
+      <FilePathData Path="grabBanker/chat_icon.png" />
+      <FilePathData Path="grabBanker/coins.png" />
+      <FilePathData Path="grabBanker/dont_grab.png" />
+      <FilePathData Path="grabBanker/drop_down_menu.png" />
+      <FilePathData Path="grabBanker/floor_bg.png" />
+      <FilePathData Path="grabBanker/gift.png" />
+      <FilePathData Path="grabBanker/gift_light.png" />
+      <FilePathData Path="grabBanker/grab.png" />
+      <FilePathData Path="grabBanker/head.png" />
+      <FilePathData Path="grabBanker/multiple.png" />
+      <FilePathData Path="grabBanker/not_niu.png" />
+      <FilePathData Path="grabBanker/num_bg.png" />
+      <FilePathData Path="grabBanker/personal_information.png" />
+      <FilePathData Path="grabBanker/plus.png" />
+      <FilePathData Path="grabBanker/red_packet.png" />
+      <FilePathData Path="grabBanker/robot.png" />
+      <FilePathData Path="grabBanker/rqual.png" />
+      <FilePathData Path="grabBanker/bubble.png" />
+    </ImageFiles>
+    <MaxSize Width="600" Height="600" />
+  </Content>
+</PlistInfoProjectFile>

@@ -1,0 +1,9 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Type="Plist" Name="DialogRedpacket" ID="e90c1100-4fff-43f9-9fe6-38add73e6b30" Version="2.3.2.3" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="DialogRedpacket/redPacket.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

@@ -1,0 +1,124 @@
+{
+    "appenders": [
+        {
+            "type": "console"
+        },
+        {
+            "type": "file",
+            "filename": "${opts:base}/logs/rpc-log-${opts:serverId}.log",
+            "maxLogSize": 1048576,
+            "layout": {
+                "type": "basic"
+            },
+            "backups": 5,
+            "category": "rpc-log"
+        },
+        {
+            "type": "file",
+            "filename": "${opts:base}/logs/forward-log-${opts:serverId}.log",
+            "maxLogSize": 1048576,
+            "layout": {
+                "type": "basic"
+            },
+            "backups": 5,
+            "category": "forward-log"
+        },
+        {
+            "type": "file",
+            "filename": "${opts:base}/logs/rpc-debug-${opts:serverId}.log",
+            "maxLogSize": 1048576,
+            "layout": {
+                "type": "basic"
+            },
+            "backups": 5,
+            "category": "rpc-debug"
+        },
+        {
+            "type": "file",
+            "filename": "${opts:base}/logs/crash.log",
+            "maxLogSize": 1048576,
+            "layout": {
+                "type": "basic"
+            },
+            "backups": 5,
+            "category":"crash-log"
+        },
+        {
+            "type": "file",
+            "filename": "${opts:base}/logs/admin.log",
+            "maxLogSize": 1048576,
+            "layout": {
+                "type": "basic"
+            }
+            ,"backups": 5,
+            "category":"admin-log"
+        },
+        {
+            "type": "file",
+            "filename": "${opts:base}/logs/pomelo-${opts:serverId}.log",
+            "maxLogSize": 1048576,
+            "layout": {
+                "type": "basic"
+            }
+            ,"backups": 5,
+            "category":"pomelo"
+        },
+        {
+            "type": "file",
+            "filename": "${opts:base}/logs/pomelo-admin.log",
+            "maxLogSize": 1048576,
+            "layout": {
+                "type": "basic"
+            }
+            ,"backups": 5,
+            "category":"pomelo-admin"
+        },
+        {
+            "type": "file",
+            "filename": "${opts:base}/logs/pomelo-rpc.log",
+            "maxLogSize": 1368709120,
+            "layout": {
+                "type": "basic"
+            }
+            ,"backups": 5,
+            "category":"pomelo-rpc"
+        },
+        {
+            "type": "file",
+            "filename": "${opts:base}/logs/niuniu.log",
+            "maxLogSize": 684354560,
+            "layout": {
+                "type": "basic"
+            },
+            "backups": 5,
+            "pattern": "-yyyy-MM-dd",
+            "alwaysIncludePattern": false,
+            "category":"niuniu"
+        },
+        {
+            "type": "file",
+            "filename": "${opts:base}/logs/logic_bairen.log",
+            "maxLogSize": 684354560,
+            "layout": {
+                "type": "basic"
+            },
+            "backups": 5,
+            "pattern": "-yyyy-MM-dd",
+            "alwaysIncludePattern": false,
+            "category":"logic_bairen"
+        }
+    ],
+
+    "levels": {
+        "rpc-log" : "ERROR",
+        "forward-log": "ERROR",
+        "rpc-debug":"ERROR",
+        "niuniu":"DEBUG"
+    },
+
+    "replaceConsole": true,
+
+    "lineDebug": true
+}
+
+

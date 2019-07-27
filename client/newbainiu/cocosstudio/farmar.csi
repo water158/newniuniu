@@ -1,0 +1,18 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="farmar" Type="Plist" ID="b17a68e0-54c4-4e3b-bac6-d994baaa65c3" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="farmar/chip-10000-1.png" />
+      <FilePathData Path="farmar/chip-1000-1.png" />
+      <FilePathData Path="farmar/chip-100-1.png" />
+      <FilePathData Path="farmar/chip-10-1.png" />
+      <FilePathData Path="farmar/chip-50000-1.png" />
+      <FilePathData Path="farmar/chip-5000-1.png" />
+      <FilePathData Path="farmar/chip-500-1.png" />
+      <FilePathData Path="farmar/chip-50-1.png" />
+      <FilePathData Path="farmar/chip-1000000-1.png" />
+      <FilePathData Path="farmar/chip-100000-1.png" />
+    </ImageFiles>
+    <MaxSize Width="128" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>newShop/biaoti.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{360,0},{431,113}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{431,113}</string>
+			</dict>
+			<key>newShop/butiao .png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,242},{431,113}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{431,113}</string>
+			</dict>
+			<key>newShop/buyButton.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,673},{201,96}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{201,96}</string>
+			</dict>
+			<key>newShop/coinN.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{96,673},{217,83}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{217,83}</string>
+			</dict>
+			<key>newShop/coinY.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{96,756},{217,83}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{217,83}</string>
+			</dict>
+			<key>newShop/daojuN.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{313,431},{217,83}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{217,83}</string>
+			</dict>
+			<key>newShop/daojuY.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{313,648},{217,83}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{217,83}</string>
+			</dict>
+			<key>newShop/diban.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{242,360}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{242,360}</string>
+			</dict>
+			<key>newShop/neichen.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{242,242},{92,92}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{92,92}</string>
+			</dict>
+			<key>newShop/shopBg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{113,242},{138,129}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{138,129}</string>
+			</dict>
+			<key>newShop/xhao.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{242,334},{73,78}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{73,78}</string>
+			</dict>
+			<key>newShop/labap.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{113,380},{120,121}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{120,121}</string>
+			</dict>
+			<key>newShop/box.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{113,500},{120,121}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{120,121}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>newCommon.png</string>
+			<key>realTextureFileName</key>
+			<string>newCommon.png</string>
+			<key>size</key>
+			<string>{473,874}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>473</integer>
+			<key>height</key>
+			<integer>874</integer>
+		</dict>
+	</dict>
+</plist>
